@@ -1,0 +1,37 @@
+/******* variable *******/
+/****** button style **********/
+.footer {
+  background-color: #191a1b;
+  color: #bfc0c0;
+  padding: 10px;
+  text-align: center;
+}
+
+.footer .social-media {
+  font-size: 2rem;
+  width: 50%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer .social-media a {
+  width: 40px;
+  height: 40px;
+  display: block;
+  color: #bfc0c0;
+  -webkit-transition: .8s color, .8s transform;
+  transition: .8s color, .8s transform;
+  line-height: 2;
+}
+
+.footer .social-media a:hover {
+  color: #fd9e75;
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+/*# sourceMappingURL=footer.css.map */
