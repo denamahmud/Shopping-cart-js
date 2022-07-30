@@ -1,0 +1,48 @@
+/******* variable *******/
+
+$color_green_dark : #16635b;
+$color_gray_dark : #191a1b;
+$color_white_2 : #c9c9c9;
+$color_3 : #1e1e1e;
+$color_green : #83C5BE;
+$trans_color : .8s color;
+$color_orange : #fd9e75;
+$color_orange_light : #e0c2b6;
+
+
+
+
+
+/****** button style **********/
+
+%button-style{
+
+    width: 120px;
+    margin: 20px auto;
+    height: 40px;
+    color: $color_green;
+    border-radius: 5px;
+    border: 0.5px solid $color_green;
+    transition: 0.8s background-color;
+    box-shadow: rgba(60,64,67,0.3) 0 1px 2px 0,
+                  rgba(60,64,67,0.15) 0 2px 6px 2px;
+    
+    &:hover{
+
+        border: none;
+        background-color: $color_green;
+
+    
+        a{
+            color: $color_orange;
+            &:hover{
+               
+                color: $color_orange;
+            }
+        }
+
+    }
+}
+
+
+

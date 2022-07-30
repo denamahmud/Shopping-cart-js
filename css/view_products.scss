@@ -1,0 +1,106 @@
+@import 'header.scss';
+@import 'general.scss';
+
+.header{
+    z-index: 1000;
+    .brand{
+        a{
+            color: $color_green;
+            &:hover{
+                color: $color_green_dark;
+
+            }
+        }
+    }
+}
+
+.my-products{
+    height: 100vh;
+    background-color: $color_3;
+    .total-content{
+        margin-top: 130px;
+        text-align: center;
+        padding: 30px;
+        font-size: 3rem;
+        display: flex;
+        justify-content: space-around;
+        .pay-btn{
+            @extend %button-style;
+            width: 200px;
+            height: 50px;
+            margin: 0;
+            &:hover{
+                color: $color_orange;
+                background-color: $color_gray_dark;
+            }
+        }
+        .tq-content-style{
+            color: $color_green;
+            .tq-style{
+                color: $color_orange;
+            }
+        }
+        
+    }
+    
+    .titles{
+        background-color: $color_orange;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        
+        .h3-style{
+            width: 200px;
+            text-align: center;
+            text-transform: capitalize;
+        }
+        
+    }
+    .titles,.my-products-content{
+    
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 20px;
+        
+    }
+    .my-products-container{
+        height: 50vh;
+        width: 97%;
+        margin: 0 auto;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        color: $color_white_2;
+        overflow-y: scroll;
+        .price-style{
+            line-height: 5;
+        }
+        .myP-style{
+            width: 200px;
+            text-align: center;
+            text-transform: capitalize;
+            .remove-from-cart{
+                @extend %button-style;
+                &:hover{
+                    background-color: $color_gray_dark;
+                    color: $color_orange;
+                }
+                
+            }
+        }
+        
+
+
+    }
+    .my-products-content{
+
+        img{
+            width: 80px;
+            height: 80px;
+        }
+        
+        
+
+    }
+    
+}
+

@@ -1,0 +1,109 @@
+/*************** header **************/
+@import 'header.scss';
+@import 'general.scss';
+@import 'footer.scss';
+
+
+/*************** main ****************/
+
+.main{
+    
+    background-image: url("../images/main_page/shopping.jpg");
+    background-size: cover;
+    height: 88.1vh;
+    width: 100%;
+    .no-products{
+        width: 100%;
+        height: 100vh;
+
+        .overlay{
+            background-color: rgba(0,0,0,0.7);
+            width: inherit;
+            height: inherit;
+        }
+        .no-products-content{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            h3{
+                font-size: 3rem;
+                line-height: 1.5;
+                color: $color_white_2;
+            }
+            p{
+                font-size: 5rem;
+                color: $color_orange;
+                padding: 15px;
+                border-radius: 5px;
+            }
+            a{
+               color: $color_green;
+               text-decoration: none;
+               text-transform: uppercase;
+               transition: .8s color;
+               margin-left: 5px;
+               
+               &:hover{
+                   color: $color_orange;
+
+               }
+       
+            }
+          
+        
+        }
+
+    }
+    
+    
+    .product{
+        
+        cursor: pointer;
+        margin: 15px 0;
+        color: $color_white_2;
+        text-align: center;
+        border-radius: 5px;
+        padding: 20px;
+        transition: 0.8s background-color;
+        background-color: $color_green_dark;
+        .title-product{
+            color: $color_orange;
+            font-weight: bold;
+        }
+        .add-to-cart{
+           
+            @extend %button-style;
+                
+                &:hover{
+                    background-color: $color_gray_dark;
+                    color: $color_orange;
+                }
+            
+          
+            
+        }
+        img{
+            width: 80px;
+            height: 80px;
+            
+        }
+      
+      
+        
+    }
+
+
+   
+    
+}
+
+
+/********** header style when scroll ***************/
+
+
+.header-style{
+    background: rgba($color_gray_dark, .5) !important;
+ 
+}
+
