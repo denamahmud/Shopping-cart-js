@@ -24,6 +24,10 @@
 </br>
 
 
+<h2>Features :-</h2>
+<ul>
+   <li>Stickyheader</li>
+</ul>
 
 <h2>User experience :-</h2>
 <p>The users cannot add to cart unless firstly register
