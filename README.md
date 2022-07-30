@@ -26,7 +26,7 @@
 
 <h2>Features :-</h2>
 <ul>
-   <li>Stickyheader</li>
+   <li>Sticky header</li>
 </ul>
 
 <h2>User experience :-</h2>
